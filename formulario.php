@@ -8,43 +8,45 @@
     <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
-    <form method="POST" action="teste.php">
+    <div class="container">
+        <form method="POST" action="teste.php">
 
-        <div class="container">
+            <div class="box">
 
-            <h3>Adicionar nova palavra</h3>
-        
-            <div>
-
-                <label for="palavra">Palavra </label><br>
-                <input type="text" name="palavra" id="palavra" placeholder="Digite a palavra" size="20" required>
-
-            </div>
+                <h3>Adicionar nova palavra</h3>
             
-            <div>
+                <div>
 
-                <label for="traducao">Tradução </label><br>
-                <input type="traducao" name="traducao" id="traducao" placeholder="Digite sua tradução" size="20" required>
+                    <label for="palavra">Palavra </label><br>
+                    <input type="text" name="palavra" id="palavra" placeholder="Digite a palavra" size="20" required>
+
+                </div>
+                
+                <div>
+
+                    <label for="traducao">Tradução </label><br>
+                    <input type="traducao" name="traducao" id="traducao" placeholder="Digite sua tradução" size="20" required>
+
+                </div>
+
+                <div>
+
+                    <label for="">Aonde você deseja adicionar?</label><br>
+                    
+                    <input type="radio" name="gaveta" id="a">
+                    <label>A</label>
+                    
+                    <input type="radio" name="gaveta" id="b">
+                    <label>B</label>
+                    
+                    <input type="radio" name="gaveta" id="c">
+                    <label>C</label>
+
+                </div>
 
             </div>
 
-            <div>
-
-                <label for="">Aonde você deseja adicionar?</label>
-                
-                <input type="radio" name="gaveta" id="a">
-                <label>A</label>
-                
-                <input type="radio" name="gaveta" id="b">
-                <label>B</label>
-                
-                <input type="radio" name="gaveta" id="c">
-                <label>C</label>
-
-            </div>
-
-        </div>
-
-    </form>
+        </form>
+    </div>
 </body>
 </html>
