@@ -44,6 +44,10 @@
 
                 </div>
 
+                <div>
+                    <input type="submit" value="Adicionar">
+                </div>
+
             </div>
 
         </form>
