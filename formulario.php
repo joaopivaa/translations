@@ -29,7 +29,18 @@
                 <label for="traducao">Tradução</label>
                 <i></i>
             </div>
-            <br><br>
+            <div class="inputBox">
+                <select name="letra" id="letra">
+                    <option value="1">Qual a letra?</option>
+                    <option value="2">A</option>
+                    <option value="3">B</option>
+                    <option value="4">C</option>
+                    <option value="5">D</option>
+                    <option value="6">Outro</option>
+                </select>
+                <i></i>
+            </div>
+            <br>
             <div class="container-btn">
                 <input type="submit" value="Adicionar">
             </div>
