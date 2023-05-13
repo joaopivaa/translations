@@ -57,12 +57,12 @@
     font-size: 1em;
     color: #656565;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.15s;
   }
   .inputBox input:valid ~ label,
   .inputBox input:focus ~ label {
     color: #656565;
-    transform: translateX(0px) translateY(-34px);
+    transform: translateX(0px) translateY(-25px);
     font-size: 0.80em;
   }
   .inputBox i {
@@ -73,7 +73,7 @@
     height: 2px;
     background: #6565653f;
     border-radius: 4px;
-    transition: 0.1s;
+    transition: 0.05s;
     pointer-events: none;
   }
   .inputBox input:valid ~ i,
