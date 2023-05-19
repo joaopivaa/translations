@@ -30,12 +30,17 @@
                 <i></i>
             </div>
             <div class="inputBox">
+<<<<<<< HEAD
                 <select name="letra" id="letra" required>
+=======
+                <select name="letra" id="letra">
+>>>>>>> 9566a21a66b17cc458abfaf5c656e0bd0a1d1fb3
                     <option value="1">Qual a letra?</option>
                     <option value="2">A</option>
                     <option value="3">B</option>
                     <option value="4">C</option>
                     <option value="5">D</option>
+<<<<<<< HEAD
                     <option value="6">E</option>
                     <option value="7">F</option>
                     <option value="8">G</option>
@@ -59,6 +64,9 @@
                     <option value="26">Y</option>
                     <option value="27">Z</option>
                     <option value="28">CC</option>
+=======
+                    <option value="6">Outro</option>
+>>>>>>> 9566a21a66b17cc458abfaf5c656e0bd0a1d1fb3
                 </select>
                 <i></i>
             </div>
