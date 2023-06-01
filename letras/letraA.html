@@ -19,24 +19,31 @@
             color: #9566dc;    
         }
 
+        .container {
+            border: 1px solid #9566dc;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
         .haid {
-            width: 130px;
-            height: 565px;
+            border: 1px solid #9566dc;
+            width: 21vh;
+            height: 98vh;
             display: flex;
             justify-content: center;
             align-items: center;            
         }
 
         hr{
-            margin-top: -535px;
-            margin-left: 125px;
+            margin-left: 10vh;
             background-color: #9566dc;
         }
 
-        .container {
-
-            width: 1100px;
-            height: 550px;
+        .sub {
+            border: 1px solid #9566dc;
+            width: 85%;
+            height: 98vh;
             margin-left: 135px;
             margin-top: -535px;
             align-items: center;
@@ -65,14 +72,13 @@
         li p {
 
             font-family: 'Courier New', Courier, monospace;
-            font-size: 13px;
+            font-size: 0.82em;
         }
 
         .buttons {
-          width: 20px;
-          height: 550px;
-          margin-left: 97.5%;
-          margin-top: -43.4%;
+        border: 1px solid #9566dc;
+          width: 1.5%;
+          height: 100vh;
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -119,8 +125,6 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          top: 0;
-          left: 0;
         }
 
         .radio input[type=radio]:checked {
@@ -131,14 +135,16 @@
     </style>
     </head>
 <body>
-    
+
+    <div class="container">
+
     <div class="haid">
         <p style="font-size: 72px;"><a href="../index.html">A</a></p>
     </div>
 
     <hr width = "2" size = "512">
-
-    <div class="container">
+    <!--
+    <div class="collapse">
 
         <div>
 
@@ -323,15 +329,16 @@
 
   </div>
 
-    <div class="buttons">
+-->
 
-      <div class="radio" id="show">
-        <input type="radio" value="0" name="row" checked>
-      </div>
-
-      <div class="radio" id="hide">
-        <input type="radio" value="1" name="row" >
-      </div>
+        <div class="buttons">
+            <div class="radio" id="show">
+                <input type="radio" value="0" name="row" checked>
+            </div>
+            <div class="radio" id="hide">
+                <input type="radio" value="1" name="row" >
+            </div>
+        </div>
 
     </div>
 
