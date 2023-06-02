@@ -20,53 +20,54 @@
         }
 
         .container {
-            border: 1px solid #9566dc;
             width: 100%;
             height: 100vh;
             display: flex;
         }
 
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .haid {
-            border: 1px solid #9566dc;
-            width: 21vh;
-            height: 98vh;
+            width: 18vh;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;            
         }
 
         hr{
-            margin-left: 10vh;
             background-color: #9566dc;
+            height: 80vh;
         }
 
         .sub {
             border: 1px solid #9566dc;
             width: 85%;
-            height: 98vh;
-            margin-left: 135px;
-            margin-top: -535px;
-            align-items: center;
-            justify-content: center;
-            display: block;
+            height: 100vh;
+            display: flex;
             visibility: none ;
         }
 
         .primer {
-
-            margin-left: 5%;
-            margin-top: 1%;
+            border: 1px solid #9566dc;
+            width: 28.3%;
+            height: 100vh;
         }
 
         .second {
-
-            margin-left: 38%;
-            margin-top: -49.2%;
+            border: 1px solid #9566dc;
+            width: 28.3%;
+            height: 100vh;
         }
 
         .terc {
-            margin-left: 70%;
-            margin-top: -49.2%;
+            border: 1px solid #9566dc;
+            width: 28.3%;
+            height: 100vh;
         }
 
         li p {
@@ -76,7 +77,6 @@
         }
 
         .buttons {
-        border: 1px solid #9566dc;
           width: 1.5%;
           height: 100vh;
           display: flex;
@@ -90,12 +90,9 @@
         }
 
         .display {
-          width: 1100px;
-          height: 550px;
-          margin-left: 135px;
-          margin-top: -535px;
-          align-items: center;
-          justify-content: center;
+          border: 1px solid #9566dc;
+          width: 85%;
+          height: 100vh;
           display: none; 
           visibility: none; /* O elemento permanece interferindo no display, mas sem aparecer */
         }
@@ -142,13 +139,14 @@
         <p style="font-size: 72px;"><a href="../index.html">A</a></p>
     </div>
 
-    <hr width = "2" size = "512">
-    <!--
-    <div class="collapse">
+    <div class="center">
+        <hr width = "2">
+    </div>
 
-        <div>
+    <div class="sub collapse">
 
-            <ul class="primer">
+        <div class="primer">
+            <ul>
                 <li><p style="color: #9566dc;">Alone <span style="color: #696868;"> → Sozinho</span></p></li>
                 <li><p style="color: #9566dc;">And <span style="color: #696868;"> → E</span></p></li>
                 <li><p style="color: #9566dc;">Address <span style="color: #696868;"> → Endereço</span></p></li>
@@ -180,12 +178,10 @@
                 <li><p style="color: #9566dc;">Anxiety <span style="color: #696868;"> → Ansiedade</span></p></li>
                 <li><p style="color: #9566dc;">Alright <span style="color: #696868;"> → Tudo Bem</span></p></li>
             </ul>
-
         </div>
 
-        <div>
-
-            <ul class="second">
+        <div class="second">
+            <ul>
                 <li><p style="color: #9566dc;">Advance <span style="color: #696868;"> → Avançar </span></p></li>
                 <li><p style="color: #9566dc;">Add <span style="color: #696868;"> → Adicionar </span></p></li>
                 <li><p style="color: #9566dc;">Aesthetic <span style="color: #696868;"> → Estética </span></p></li>
@@ -217,12 +213,10 @@
                 <li><p style="color: #9566dc;">Ability <span style="color: #696868;"> → Capacidade </span></p></li>
                 <li><p style="color: #9566dc;">Aboute <span style="color: #696868;"> → Perto </span></p></li>
             </ul>
-
         </div>
 
-        <div>
-
-            <ul class="terc">
+        <div class="terc">
+            <ul>
                 <li><p style="color: #9566dc;">Absolutely <span style="color: #696868;"> → Absolutamente </span></p></li>
                 <li><p style="color: #9566dc;">Accomplishes <span style="color: #696868;"> → Realiza </span></p></li>
                 <li><p style="color: #9566dc;">According <span style="color: #696868;"> → De acordo </span></p></li>
@@ -254,16 +248,13 @@
                 <li><p style="color: #9566dc;">Adviser <span style="color: #696868;"> → Conselheiro </span></p></li>
                 <li><p style="color: #9566dc;">Asleep <span style="color: #696868;"> → Adormecido </span></p></li>
             </ul>
-
         </div>
-
     </div>
 
     <div class="display">
 
-      <div>
-
-          <ul class="primer">
+      <div class="primer">
+          <ul>
               <li><p style="color: #9566dc;">Advocacy <span style="color: #696868;"> → Advocacia </span></p></li>
               <li><p style="color: #9566dc;">Affairs <span style="color: #696868;"> → Romances </span></p></li>
               <li><p style="color: #9566dc;">Affect <span style="color: #696868;"> → Afetar </span></p></li>
@@ -298,9 +289,9 @@
 
       </div>
 
-      <div>
+      <div class="second">
 
-          <ul class="second">
+          <ul>
               <li><p style="color: #9566dc;">Apologise <span style="color: #696868;"> → Pedir desculpas </span></p></li>
               <li><p style="color: #9566dc;">Apparent <span style="color: #696868;"> → Aparente </span></p></li>
               <li><p style="color: #9566dc;">Appearance <span style="color: #696868;"> → Aparência </span></p></li>
@@ -329,16 +320,14 @@
 
   </div>
 
--->
-
-        <div class="buttons">
-            <div class="radio" id="show">
-                <input type="radio" value="0" name="row" checked>
-            </div>
-            <div class="radio" id="hide">
-                <input type="radio" value="1" name="row" >
-            </div>
+    <div class="buttons">
+        <div class="radio" id="show">
+            <input type="radio" value="0" name="row" checked>
         </div>
+        <div class="radio" id="hide">
+            <input type="radio" value="1" name="row" >
+        </div>
+    </div>
 
     </div>
 

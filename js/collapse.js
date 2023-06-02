@@ -10,13 +10,13 @@ btn.addEventListener('click', function () {
 
     if (sub.style.display === 'none') 
     {
-        sub.style.display = 'block' ;
+        sub.style.display = 'flex' ;
         display.style.display = 'none' ;
         
     }
     else
     {
-        sub.style.display = 'block' ;
+        sub.style.display = 'flex' ;
         display.style.display = 'none' ;
     }
     
@@ -26,12 +26,12 @@ input.addEventListener('click', function () {
 
     if(display.style.display === 'none')
     {
-        display.style.display = 'block' ;
+        display.style.display = 'flex' ;
         sub.style.display = 'none' ;
     }
     else
     {
-        display.style.display = 'block' ;
+        display.style.display = 'flex' ;
         sub.style.display = 'none' ;
     }
     
