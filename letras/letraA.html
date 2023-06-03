@@ -12,25 +12,24 @@
             margin: 0;
             padding: 0;
         }
-
+        body {
+            scroll-behavior: smooth;
+        }
         a{
 
             text-decoration: none;
             color: #9566dc;    
         }
-
         .container {
             width: 100%;
             height: 100vh;
             display: flex;
         }
-
         .center {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
         .haid {
             width: 18vh;
             height: 100vh;
@@ -38,71 +37,68 @@
             justify-content: center;
             align-items: center;            
         }
-
         hr{
             background-color: #9566dc;
-            height: 80vh;
+            height: 75vh;
         }
-
         .sub {
-            border: 1px solid #9566dc;
             width: 85%;
             height: 100vh;
             display: flex;
             visibility: none ;
         }
-
         .primer {
-            border: 1px solid #9566dc;
             width: 28.3%;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2vh;
         }
-
         .second {
-            border: 1px solid #9566dc;
             width: 28.3%;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2vh;
         }
-
         .terc {
-            border: 1px solid #9566dc;
             width: 28.3%;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2vh;
         }
-
         li p {
 
             font-family: 'Courier New', Courier, monospace;
-            font-size: 0.82em;
+            font-size: 0.8em;
         }
-
-        .buttons {
-          width: 1.5%;
-          height: 100vh;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          align-content: center;
-
-        
-        }
-
         .display {
-          border: 1px solid #9566dc;
           width: 85%;
           height: 100vh;
           display: none; 
           visibility: none; /* O elemento permanece interferindo no display, mas sem aparecer */
         }
-
         .display::after {
 
           content: "" ;
           clear: both;
         }
-
+        .buttons {
+          width: 1%;
+          height: 100vh;
+          display: flex;
+          flex-wrap: wrap;  
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+        }
+        .radio + .radio {
+            margin-top: 8px;
+        }
         .radio {
           border: 1px solid #656161ca;
           border-radius: 10px;
@@ -112,23 +108,17 @@
           width: 12px;
           cursor: pointer;
         }
-
-        .radio + .radio {
-          margin-top: 10px;
-        }
-
+        
         .radio input[type=radio] {
           all: unset;
           position: absolute;
           width: 100%;
           height: 100%;
         }
-
         .radio input[type=radio]:checked {
           border-radius: 10px;
           background-color: #9566dc;
         }
-
     </style>
     </head>
 <body>
@@ -286,11 +276,9 @@
               <li><p style="color: #9566dc;">Anyway <span style="color: #696868;"> → De qualquer forma</span></p></li>
               <li><p style="color: #9566dc;">Anywhere <span style="color: #696868;"> → Em qualquer lugar</span></p></li>
           </ul>
-
       </div>
 
       <div class="second">
-
           <ul>
               <li><p style="color: #9566dc;">Apologise <span style="color: #696868;"> → Pedir desculpas </span></p></li>
               <li><p style="color: #9566dc;">Apparent <span style="color: #696868;"> → Aparente </span></p></li>
@@ -315,7 +303,6 @@
               <li><p style="color: #9566dc;">Awful <span style="color: #696868;"> → Horrível </span></p></li>
               <li><p style="color: #9566dc;">Awkward <span style="color: #696868;"> → Desajeitado </span></p></li>
           </ul>
-
       </div>
 
   </div>
