@@ -1,13 +1,13 @@
 <?php
 
-    $Palavra = $_GET["palavra"] ;
-
-    $Traducao = $_GET["traducao"] ;
-
-    $Variavel = '<li><p style="color: #9566dc;">' . $Palavra . ' <span style="color: #696868;"> → ' . $Traducao . '</span></p></li>' ;
-
     if ($_GET["Letra"] == "A") 
     { 
+        $Palavra = $_GET["palavra"] ;
+
+        $Traducao = $_GET["traducao"] ;
+
+        $Variavel = '<li><p style="color: #9566dc;">' . $Palavra . ' <span style="color: #696868;"> → ' . $Traducao . '</span></p></li>' ;
+        
         $i = 0 ;
 
         $Letra_A = array(500);
