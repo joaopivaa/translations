@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="lib/css/formulario.css">
 
     <title>Translations</title>
 </head>
@@ -17,17 +17,29 @@
 
         <div class="form">
 
-            <form action="teste.php" method="GET">
+            <form action="teste.php" method="POST" action="core/word_repositorio.php">
 
                 <h2>Translations</h2>
 
                 <div class="inputBox">
-                    <input type="text" id="palavra" name="palavra" size="28" required>
+                    <input 
+                        type="text" 
+                        id="palavra" 
+                        name="palavra" 
+                        value="" 
+                        required
+                    >
                     <label for="palavra">Palavra</label>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="text" id="traducao" name="traducao" size="28" required>
+                    <input 
+                        type="text" 
+                        id="traducao" 
+                        name="traducao" 
+                        value="" 
+                        required
+                    >
                     <label for="traducao">Tradução</label>
                     <i></i>
                 </div>
@@ -66,7 +78,10 @@
                 </div>
                 <br>
                 <div class="container-btn">
-                    <input type="submit" value="Adicionar">
+                    <input 
+                        type="submit" 
+                        value="Adicionar"
+                    >
                 </div>
             </form>
         </div>

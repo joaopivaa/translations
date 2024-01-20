@@ -68,7 +68,7 @@ body {
 .inputBox label {
   position: absolute;
   left: 0;
-  padding: 20px 0px 15px;
+  padding: 15px 0px 15px;
   font-size: 1em;
   color: #656565;
   pointer-events: none;
