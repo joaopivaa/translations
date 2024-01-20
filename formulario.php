@@ -17,7 +17,7 @@
 
         <div class="form">
 
-            <form action="teste.php" method="POST" action="core/word_repositorio.php">
+            <form method="POST" action="core/word_repositorio.php">
 
                 <h2>Translations</h2>
 
@@ -44,35 +44,34 @@
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <select name="Letra" value="Letra" required>
-                        <option>Qual a letra?</option>
-                        <option>A</option>
-                        <option>B</option>
-                        <option>C</option>
-                        <option>D</option>
-                        <option>E</option>
-                        <option>F</option>
-                        <option>G</option>
-                        <option>H</option>
-                        <option>I</option>
-                        <option>J</option>
-                        <option>K</option>
-                        <option>L</option>
-                        <option>M</option>
-                        <option>N</option>
-                        <option>O</option>
-                        <option>P</option>
-                        <option>Q</option>
-                        <option>R</option>
-                        <option>S</option>
-                        <option>T</option>
-                        <option>U</option>
-                        <option>V</option>
-                        <option>W</option>
-                        <option>X</option>
-                        <option>Y</option>
-                        <option>Z</option>
-                        <option>CC</option>
+                    <select name="letras" id="letra" required>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">E</option>
+                        <option value="">F</option>
+                        <option value="">G</option>
+                        <option value="">H</option>
+                        <option value="">I</option>
+                        <option value="">J</option>
+                        <option value="">K</option>
+                        <option value="">L</option>
+                        <option value="">M</option>
+                        <option value="">N</option>
+                        <option value="">O</option>
+                        <option value="">P</option>
+                        <option value="">Q</option>
+                        <option value="">R</option>
+                        <option value="">S</option>
+                        <option value="">T</option>
+                        <option value="">U</option>
+                        <option value="">V</option>
+                        <option value="">W</option>
+                        <option value="">X</option>
+                        <option value="">Y</option>
+                        <option value="">Z</option>
+                        <option value="">CC</option>
                     </select>
                     <i></i>
                 </div>

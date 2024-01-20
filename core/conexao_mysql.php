@@ -1,7 +1,6 @@
 <?php
-    function conecta() : mysqli
-    {
-        $servidor = 'localhost' ;
+
+        $server = 'localhost' ;
 
         $banco = 'translations' ;
 
@@ -11,7 +10,7 @@
 
         $senha = '' ;
 
-        $conexao = mysqli_connect($servidor, $usuario, $senha, $banco, $port) ;
+        $conexao = new mysqli($server, $usuario, $senha, $banco, $port) ;
 
         if (!$conexao) 
         {
@@ -23,12 +22,4 @@
 
             return null ;
         }
-
-        return $conexao ;
-    }
-    function desconecta ($conexao)
-    {
-        mysqli_close($conexao) ;
-    }
-
 ?>
