@@ -12,3 +12,11 @@ h2 {
     visibility: collapse;
 } 
 */
+
+.link {
+    color: #9163d7;
+  }
+  .link:hover{
+    text-decoration: none;
+    color: #9163d7;
+  }

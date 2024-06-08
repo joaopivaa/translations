@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,19 +14,7 @@
 
     <link href="lib/css/docs.min.css" rel="stylesheet">
 
-    <style>
-      body {
-        scroll-behavior: smooth;
-      }
-
-      .link {
-        color: #9163d7;
-      }
-      .link:hover{
-        text-decoration: none;
-        color: #9163d7;
-      }
-    </style>
+    <link rel="stylesheet" href="lib/css/style.css">
   
   </head>
 
