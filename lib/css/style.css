@@ -3,20 +3,11 @@
     padding: 0;
 }
 
-h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Deixa o elemento invisível
-.collapse{
-    visibility: collapse;
-} 
-*/
-
 .link {
     color: #9163d7;
   }
-  .link:hover{
+  
+.link:hover{
     text-decoration: none;
     color: #9163d7;
   }
