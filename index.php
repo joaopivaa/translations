@@ -12,7 +12,6 @@
     <link href="lib/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/css/album.css" rel="stylesheet">
     <link href="lib/css/docs.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="lib/css/style.css">
   </head>
   <body>
       <section class="jumbotron text-center">
