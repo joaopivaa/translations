@@ -34,6 +34,10 @@ a{
     display: flex;
     justify-content: center;
 }
+#group-2 {
+    display: none; 
+    visibility: none;
+}
 .list-word {
     width: 90%;
     display: flex;
@@ -63,10 +67,6 @@ li p span {
   justify-content: space-between;
   display: none; 
   visibility: none;
-}
-.content-hidden::after {
-  content: "" ;
-  clear: both;
 }
 .group-buttons {
   height: 100vh;
@@ -104,13 +104,13 @@ li p span {
 }
 
 @media screen and (max-width: 1000px){
-    .content, .content-hidden {
+    .content {
         justify-content: space-around;
     }
 }
 
 @media screen and (max-width: 900px){
-    .content, .content-hidden {
+    .content {
         justify-content: space-evenly;
     }
 }
@@ -122,21 +122,13 @@ li p span {
         height: auto;
     }
 
-    .container, .content, .content-hidden {
+    .container, .content {
         flex-direction: column;
     }
     .content{   
         width: 100%;
         margin-top: 40px;
         display: flex;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-    }
-    .content-hidden{  
-        width: 100%;
-        margin-top: 40px;
-        display: none;
         height: auto;
         align-items: center;
         justify-content: center;
