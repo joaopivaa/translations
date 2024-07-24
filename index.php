@@ -27,98 +27,98 @@
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraA.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">A</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">A</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraB.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">B</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">B</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraC.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">C</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">C</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraD.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">D</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">D</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraE.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">E</a>
+                  <a href=letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">E</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraF.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">F</a>
+                  <a href=letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">F</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraG.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">G</a>
+                  <a href=letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">G</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraH.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">H</a>
+                  <a href=letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">H</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraI.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">I</a>
+                  <a href=letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">I</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraJ.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">J</a>
+                  <a href=letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">J</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraK.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">K</a>
+                  <a href=letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">K</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraL.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">L</a>
+                  <a href="letras/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">L</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraM.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">M</a>
+                  <a href="letras/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">M</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraN.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">N</a>
+                  <a href="letras/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">N</a>
                 </div>
               </div>
             </div>
@@ -132,77 +132,77 @@
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraP.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">P</a>
+                  <a href="letras/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">P</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraQ.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">Q</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">Q</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraR.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">R</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">R</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraS.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">S</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">S</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraT.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">T</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">T</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraU.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">U</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">U</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraV.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">V</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">V</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraW.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">W</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">W</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraX.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">X</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">X</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraY.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">Y</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">Y</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-body text-center">
-                  <a href="letras/letraZ.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">Z</a>
+                  <a href="letra/letra.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">Z</a>
                 </div>
               </div>
             </div>
