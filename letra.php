@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translations 🌎 - Letra N</title>
-    <link rel="stylesheet" href="../lib/css/letras.css">
+    <link rel="stylesheet" href="lib/css/letra.css">
     </head>
 <body>
 
     <div class="container">
         <div class="word">
-            <p>
-                <a href="../index.php">N</a>
-            </p>
+            <?php
+                $letra = isset($_GET['letra']) ? $_GET['letra'] : 'A';
+                echo "<p> <a href='index.php'>" . htmlspecialchars($letra) . "</a> </p>" ;
+            ?>
         </div>
         <div class="content" id="group-1">
             <div class="list-word">
@@ -186,6 +187,6 @@
         </div>
     </div>
 
-    <script src="../lib/js/collapse.js"></script>
+    <script src="lib/js/collapse.js"></script>
 </body>
 </html>
