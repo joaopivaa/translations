@@ -1,17 +1,57 @@
 <?php
 
+    session_start();
+    require_once '../includes/funcoes.php';
     require_once 'conexao_mysql.php' ;
+    require_once 'sql.php' ;
+    require_once 'mysql.php' ;
 
-    $palavra = $_POST["palavra"] ;
+    foreach($_POST as $indice => $dado) {
+        $$indice = limparDados($dado);
+    }
 
-    $traducao = $_POST["traducao"] ;
+    foreach($_GET as $indice => $dado) {
+        $$indice = limparDados($dado);
+    }
 
-    $Letra = $_POST["letra"] ;
+    $id = (int)$id ;
 
-    $sql = "INSERT INTO 
-    
-    word (palavra, traducao, letra) VALUES
-    
-    ('$palavra', '$traducao', '$letra')" ;
+    switch ($acao) {
+        case 'insert':
 
+            $dados = [
+                'palavra'           => $palavra,
+                'traducao'          => $traducao,
+                'letra'             => $letra
+            ];
+
+            insere('word', $dados);
+            break;
+
+        case 'update':
+            
+            $dados = [
+                'palavra'           => $palavra,
+                'traducao'          => $traducao,
+                'letra'             => $letra
+            ];
+
+            $criterio = [
+                ['id', '=', $id]
+            ];
+
+            atualiza('word', $dados, $criterio);
+            break;
+
+        case 'delete':
+            
+            $criterio = [
+                ['id', '=', $id]
+            ];
+
+            deleta('word', $criterio);
+            break;
+    }
+
+    header('Location: ../word_formulario.php');
 ?>

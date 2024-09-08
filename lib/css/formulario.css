@@ -20,12 +20,13 @@
   transform: translate(-50%, -50%);
 }
 
-.form h2 {
+.form a {
+  font-size: 24px;
   color: #656565;
-  font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .inputBox {

@@ -1,11 +1,11 @@
 <?php
-
+    function conecta () : mysqli {
         $server = 'localhost' ;
         $banco = 'translations' ;
         $port = 3307 ;
         $usuario = 'root' ;
         $senha = '' ;
-        $conexao = new mysqli($server, $usuario, $senha, $banco, $port) ;
+        $conexao = mysqli_connect($server, $usuario, $senha, $banco, $port) ;
 
         if (!$conexao)  {
             echo "Erro: Não foi possível conectar ao Mysql. " . PHP_EOL ;
@@ -14,4 +14,10 @@
             
             return null ;
         }
+
+        return $conexao ;
+    }
+    function desconecta ($conexao){
+        mysqli_close($conexao) ;
+    }
 ?>

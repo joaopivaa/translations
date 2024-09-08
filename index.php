@@ -246,7 +246,7 @@
             <div class="modal-body">
               <li>Clique em cada gaveta (organizadas de A - Z) para ter acesso a diversas palavras.</li>
               <li>Além delas, você pode verificar palavras compostas/incomuns no ícone "(CC)". </li>
-              <li>Adicione uma nova palavra <a href="formulario.php" class="link"> aqui.</a></li>
+              <li>Adicione uma nova palavra <a href="word_formulario.php" class="link"> aqui.</a></li>
               <li>Temos um ícone de download clicável, onde você baixará a versão em PDF desta página.</li>
               <li>Me siga nas redes socias :) </li>
               <li>Bons estudos 😎👍</li>

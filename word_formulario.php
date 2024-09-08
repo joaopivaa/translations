@@ -9,14 +9,52 @@
 </head>
 <body>
     <div class="form">
+    <?php 
+                    
+        require_once 'includes/funcoes.php' ;
+        require_once 'core/conexao_mysql.php' ;
+        require_once 'core/sql.php' ;
+        require_once 'core/mysql.php' ;
+
+        foreach($_GET as $indice => $dado){
+            $$indice = limparDados($dado);
+        }
+
+        foreach($_POST as $indice => $dado){
+            $$indice = limparDados($dado);
+        }
+
+        if(!empty($id)){
+            $id = (int)$id;
+
+            $criterio = [
+                ['id', '=', $id]
+            ];
+
+            $retorno = buscar(
+                'word',
+                ['*'],
+                $criterio
+            );
+
+            $entidade = $retorno[0];
+        }
+    ?>
         <form method="POST" action="core/word_repositorio.php">
-            <h2>Translations</h2>
+        
+        <input type="hidden" name="acao"
+                value="<?php echo empty($id) ? 'insert' : 'update' ?>">
+        
+        <input type="hidden" name="id"
+            value="<?php echo $entidade['id'] ?? '' ?>">
+            
+            <a href="index.php"><p>Translations</p></a>
             <div class="inputBox">
                 <input 
                     type="text" 
                     id="palavra" 
                     name="palavra" 
-                    value="" 
+                    value="<?php echo $entidade['palavra'] ?? '' ?>" 
                     required
                 >
                 <label for="palavra">Palavra</label>
@@ -27,117 +65,121 @@
                     type="text" 
                     id="traducao" 
                     name="traducao" 
-                    value="" 
+                    value="<?php echo $entidade['traducao'] ?? '' ?>" 
                     required
                 >
                 <label for="traducao">Tradução</label>
                 <i></i>
             </div>
             <div class="inputBox">
-                <select name="letras" id="letra" required>
+                <select name="letra" id="letra" required>
                     <option 
-                        value="">
+                        value="A">
                             A
                     </option>
                     <option 
-                        value="">
+                        value="B">
                             B
                     </option>
                     <option 
-                        value="">
+                        value="C">
                             C
                     </option>
                     <option 
-                        value="">
+                        value="D">
                             D
                     </option>
                     <option 
-                        value="">
+                        value="E">
                             E
                     </option>
                     <option 
-                        value="">
+                        value="F">
                             F
                     </option>
                     <option 
-                        value="">
+                        value="G">
                             G
                     </option>
                     <option 
-                        value="">
+                        value="H">
                             H
                     </option>
                     <option 
-                        value="">
+                        value="I">
                             I
                     </option>
                     <option 
-                        value="">
+                        value="J">
                             J
                     </option>
                     <option 
-                        value="">
+                        value="K">
                             K
                     </option>
                     <option 
-                        value="">
+                        value="L">
                             L
                     </option>
                     <option 
-                        value="">
+                        value="M">
                             M
                     </option>
                     <option 
-                        value="">
+                        value="N">
                             N
                     </option>
                     <option 
-                        value="">
+                        value="O">
                             O
                     </option>
                     <option 
-                        value="">
+                        value="P">
                             P
                     </option>
                     <option 
-                        value="">
+                        value="Q">
                             Q
                     </option>
                     <option 
-                        value="">
+                        value="R">
                             R
                     </option>
                     <option 
-                        value="">
+                        value="S">
                             S
                     </option>
                     <option 
-                        value="">
+                        value="T">
                             T
                     </option>
                     <option 
-                        value="">
+                        value="U">
                             U
                     </option>
                     <option 
-                        value="">
+                        value="V">
                             V
                     </option>
                     <option 
-                        value="">
+                        value="W">
                             W
                     </option>
                     <option 
-                        value="">
+                        value="X">
                             X
                     </option>
                     <option 
-                        value="">
+                        value="Y">
                             Y
                     </option>
                     <option 
-                        value="">
+                        value="Z">
                             Z
+                    </option>
+                    <option 
+                        value="CC">
+                            CC
                     </option>
                 </select>
                 <i></i>
