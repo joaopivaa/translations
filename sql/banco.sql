@@ -8,3 +8,5 @@ CREATE TABLE word (
     traducao VARCHAR(255) NOT NULL,
     letra CHAR(2) NOT NULL
 );
+
+delete from word;
