@@ -1,6 +1,6 @@
-create database translations ;
-
-use translations ;
+CREATE DATABASE translations ;
+    
+USE translations ;
 
 CREATE TABLE word (
     id INT AUTO_INCREMENT PRIMARY KEY,

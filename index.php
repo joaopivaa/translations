@@ -17,7 +17,25 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 style="color: #9163d7;" class="jumbotron-heading">Translations</h1>
-          <p class="lead text-muted">Que tal um espaço online para traduções rápidas do inglês? Translations é um site simples que traz para você mais de XXXX palavras para facilitar sua compreensão acadêmica e profissional.</p>
+          <?php 
+            require_once 'core/conexao_mysql.php' ;
+
+            $conexao = conecta() ;
+
+            $total = 0;
+            $sql = "SELECT COUNT(*) AS total FROM word" ;
+            $result = mysqli_query($conexao, $sql);
+
+            $row = mysqli_fetch_assoc($result);
+            $total = $row['total'];
+
+            desconecta($conexao);
+
+            echo 
+              "<p class='lead text-muted'>
+                Que tal um espaço online para traduções rápidas do inglês? Translations é um site simples que traz para você mais de " . $total. " palavras para facilitar sua compreensão acadêmica e profissional.
+              </p>";
+          ?>
         </div>
       </section>
 
