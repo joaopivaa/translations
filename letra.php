@@ -38,8 +38,10 @@
                 }
             }
 
+            // Função para limitar a exibição de palavras do array
             $grupos = array_chunk($words, 80);
 
+            // Desconectar o banco
             desconecta($conexao);
         ?>
         
