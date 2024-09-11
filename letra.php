@@ -38,7 +38,7 @@
                 }
             }
 
-            $grupos = array_chunk($words, 90);
+            $grupos = array_chunk($words, 80);
 
             desconecta($conexao);
         ?>
@@ -59,13 +59,15 @@
                 </div>
             </div>
         <?php endforeach; ?>
-        <div class="group-buttons">
-            <?php foreach ($grupos as $index => $grupo): ?>
-                <div class="radio" id="btn-<?php echo $index + 1; ?>">
-                    <input type="radio" name="row" <?php echo $index === 0 ? 'checked' : ''; ?>>
-                </div>
-            <?php endforeach; ?>
-        </div>
+        <?php if(count($grupos) > 1): ?>
+            <div class="group-buttons">
+                <?php foreach ($grupos as $index => $grupo): ?>
+                    <div class="radio" id="btn-<?php echo $index + 1; ?>">
+                        <input type="radio" name="row" <?php echo $index === 0 ? 'checked' : ''; ?>>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
     </div>
 
     <script src="lib/js/collapse.js"></script>
