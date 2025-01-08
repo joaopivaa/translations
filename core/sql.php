@@ -38,23 +38,23 @@
 
         return $instrucao ;
     }
-     function select(string $entidade, array $campos, array $criterio = [], string $ordem = null) : string {
-            $instrucao = " SELECT " . implode(', ' , $campos) ;
-            $instrucao .= " FROM  {$entidade}" ;
+    function select(string $entidade, array $campos, array $criterio = [], string $ordem = null) : string {
+        $instrucao = " SELECT " . implode(', ' , $campos) ;
+        $instrucao .= " FROM  {$entidade}" ;
 
-            if (!empty ($criterio)) {
-                $instrucao .= ' WHERE ' ;
+        if (!empty ($criterio)) {
+            $instrucao .= ' WHERE ' ;
 
-                foreach ($criterio as $expressao) {
-                    $instrucao .= ' ' . implode(' ', $expressao) ;
+            foreach ($criterio as $expressao) {
+                $instrucao .= ' ' . implode(' ', $expressao) ;
 
-                }
             }
+        }
 
-            if (!empty ($ordem)) {
-                $instrucao .= " ORDER BY $ordem " ;
-            }
+        if (!empty ($ordem)) {
+            $instrucao .= " ORDER BY $ordem " ;
+        }
 
-            return $instrucao ;
+        return $instrucao ;
     }  
 ?>
