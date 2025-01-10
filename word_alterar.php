@@ -24,21 +24,13 @@
             $$indice = limparDados($dado);
         }
 
-        if(!empty($id)){
-            $id = (int)$id;
+        $word = buscar(
+            'word',
+            ['*'],
+            [ ['id', '=', $words] ]
+        );
 
-            $criterio = [
-                ['id', '=', $id]
-            ];
-
-            $retorno = buscar(
-                'word',
-                ['*'],
-                $criterio
-            );
-
-            $entidade = $retorno[0];
-        }
+        $words = $word[0];
     ?>
         <form method="POST" action="core/word_repositorio.php">
         
@@ -46,7 +38,7 @@
                 value="<?php echo empty($id) ? 'insert' : 'update' ?>">
         
         <input type="hidden" name="id"
-            value="<?php echo $entidade['id'] ?? '' ?>">
+            value="<?php echo $words['id'] ?? '' ?>">
             
             <a href="index.php"><p>Translations</p></a>
             <div class="inputBox">
@@ -54,7 +46,7 @@
                     type="text" 
                     id="palavra" 
                     name="palavra" 
-                    value="<?php echo $entidade['palavra'] ?? '' ?>" 
+                    value="<?php echo $words['palavra'] ?? '' ?>" 
                     required
                 >
                 <label for="palavra">Palavra</label>
@@ -65,7 +57,7 @@
                     type="text" 
                     id="traducao" 
                     name="traducao" 
-                    value="<?php echo $entidade['traducao'] ?? '' ?>" 
+                    value="<?php echo $words['traducao'] ?? '' ?>" 
                     required
                 >
                 <label for="traducao">Tradução</label>
@@ -77,7 +69,7 @@
                         $letras = range('A', 'Z');
                         array_push($letras, 'CC');
                         foreach ($letras as $letra) {
-                            $selected = ($entidade['letra'] ?? '') === $letra ? 'selected' : '';
+                            $selected = ($words['letra'] ?? '') === $letra ? 'selected' : '';
                             echo "<option value=\"$letra\" $selected>$letra</option>";
                         }
                     ?>
@@ -93,6 +85,5 @@
             </div>
         </form>
     </div>
-    <?php header('Location: ../index.php'); ?>
 </body>
 </html>
