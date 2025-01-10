@@ -1,7 +1,6 @@
 .modal {
     display: none;
     position: fixed;
-    opacity: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,12 +10,10 @@
     align-items: center;
     z-index: 1000;
     font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    transition: opacity 0.3s ease;
 }
 
 .show {
     display: flex;
-    opacity: 1;
 }
 
 .hide {
@@ -24,18 +21,12 @@
     opacity: 0;
 }
 
-.modal-content {
+.modal .modal-content {
     background: #fff;
     border-radius: 10px;
     width: 500px;
     position: relative;
     text-align: center;
-    transform: scale(0.95);
-    transition: transform 0.3s ease;
-}
-
-.show .modal-content {
-    transform: scale(1);
 }
 
 .modal-header {
@@ -85,11 +76,23 @@
 }
 
 .btn-modify {
+    border: 2px solid #6c63ff;
+    color: #6c63ff;
+    transition: all 0.2s linear;
+}
+
+.btn-delete {
+    border: 2px solid #ff5e57;
+    color: #ff5e57;
+    transition: all 0.2s linear;
+}
+
+.btn-modify:hover {
     background: #6c63ff;
     color: #fff;
 }
 
-.btn-delete {
+.btn-delete:hover {
     background: #ff5e57;
     color: #fff;
 }

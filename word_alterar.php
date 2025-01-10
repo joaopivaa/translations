@@ -73,114 +73,14 @@
             </div>
             <div class="inputBox">
                 <select name="letra" id="letra" required>
-                    <option 
-                        value="A">
-                            A
-                    </option>
-                    <option 
-                        value="B">
-                            B
-                    </option>
-                    <option 
-                        value="C">
-                            C
-                    </option>
-                    <option 
-                        value="D">
-                            D
-                    </option>
-                    <option 
-                        value="E">
-                            E
-                    </option>
-                    <option 
-                        value="F">
-                            F
-                    </option>
-                    <option 
-                        value="G">
-                            G
-                    </option>
-                    <option 
-                        value="H">
-                            H
-                    </option>
-                    <option 
-                        value="I">
-                            I
-                    </option>
-                    <option 
-                        value="J">
-                            J
-                    </option>
-                    <option 
-                        value="K">
-                            K
-                    </option>
-                    <option 
-                        value="L">
-                            L
-                    </option>
-                    <option 
-                        value="M">
-                            M
-                    </option>
-                    <option 
-                        value="N">
-                            N
-                    </option>
-                    <option 
-                        value="O">
-                            O
-                    </option>
-                    <option 
-                        value="P">
-                            P
-                    </option>
-                    <option 
-                        value="Q">
-                            Q
-                    </option>
-                    <option 
-                        value="R">
-                            R
-                    </option>
-                    <option 
-                        value="S">
-                            S
-                    </option>
-                    <option 
-                        value="T">
-                            T
-                    </option>
-                    <option 
-                        value="U">
-                            U
-                    </option>
-                    <option 
-                        value="V">
-                            V
-                    </option>
-                    <option 
-                        value="W">
-                            W
-                    </option>
-                    <option 
-                        value="X">
-                            X
-                    </option>
-                    <option 
-                        value="Y">
-                            Y
-                    </option>
-                    <option 
-                        value="Z">
-                            Z
-                    </option>
-                    <option 
-                        value="CC">
-                            CC
-                    </option>
+                    <?php 
+                        $letras = range('A', 'Z');
+                        array_push($letras, 'CC');
+                        foreach ($letras as $letra) {
+                            $selected = ($entidade['letra'] ?? '') === $letra ? 'selected' : '';
+                            echo "<option value=\"$letra\" $selected>$letra</option>";
+                        }
+                    ?>
                 </select>
                 <i></i>
             </div>
@@ -188,10 +88,11 @@
             <div class="container-btn">
                 <input 
                     type="submit" 
-                    value="Adicionar"
+                    value="Alterar"
                 >
             </div>
         </form>
     </div>
+    <?php header('Location: ../index.php'); ?>
 </body>
 </html>
