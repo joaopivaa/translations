@@ -51,5 +51,5 @@
             break;
     }
 
-    header('Location: ../word_formulario.php');
+    header('Location: ../index.php');
 ?>

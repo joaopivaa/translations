@@ -9,36 +9,35 @@
 </head>
 <body>
     <div class="form">
-    <?php 
-                    
-        require_once 'includes/funcoes.php' ;
-        require_once 'core/conexao_mysql.php' ;
-        require_once 'core/sql.php' ;
-        require_once 'core/mysql.php' ;
+        <?php     
+            require_once 'includes/funcoes.php' ;
+            require_once 'core/conexao_mysql.php' ;
+            require_once 'core/sql.php' ;
+            require_once 'core/mysql.php' ;
 
-        foreach($_GET as $indice => $dado){
-            $$indice = limparDados($dado);
-        }
+            foreach($_GET as $indice => $dado){
+                $$indice = limparDados($dado);
+            }
 
-        foreach($_POST as $indice => $dado){
-            $$indice = limparDados($dado);
-        }
+            foreach($_POST as $indice => $dado){
+                $$indice = limparDados($dado);
+            }
 
-        $word = buscar(
-            'word',
-            ['*'],
-            [ ['id', '=', $words] ]
-        );
+            $words = buscar(
+                'word',
+                ['*'],
+                [ ['id', '=', $word] ]
+            );
 
-        $words = $word[0];
-    ?>
+            $word = $words[0];
+        ?>
         <form method="POST" action="core/word_repositorio.php">
         
-        <input type="hidden" name="acao"
-                value="<?php echo empty($id) ? 'insert' : 'update' ?>">
-        
-        <input type="hidden" name="id"
-            value="<?php echo $words['id'] ?? '' ?>">
+            <input type="hidden" name="acao"
+                value="<?php echo empty($word['id']) ? 'insert' : 'update' ?>">
+            
+            <input type="hidden" name="id"
+                value="<?php echo $word['id'] ?? '' ?>">
             
             <a href="index.php"><p>Translations</p></a>
             <div class="inputBox">
@@ -46,7 +45,7 @@
                     type="text" 
                     id="palavra" 
                     name="palavra" 
-                    value="<?php echo $words['palavra'] ?? '' ?>" 
+                    value="<?php echo $word['palavra'] ?? '' ?>" 
                     required
                 >
                 <label for="palavra">Palavra</label>
@@ -57,7 +56,7 @@
                     type="text" 
                     id="traducao" 
                     name="traducao" 
-                    value="<?php echo $words['traducao'] ?? '' ?>" 
+                    value="<?php echo $word['traducao'] ?? '' ?>" 
                     required
                 >
                 <label for="traducao">Tradução</label>
@@ -69,7 +68,7 @@
                         $letras = range('A', 'Z');
                         array_push($letras, 'CC');
                         foreach ($letras as $letra) {
-                            $selected = ($words['letra'] ?? '') === $letra ? 'selected' : '';
+                            $selected = ($word['letra'] ?? '') === $letra ? 'selected' : '';
                             echo "<option value=\"$letra\" $selected>$letra</option>";
                         }
                     ?>

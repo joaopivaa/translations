@@ -40,25 +40,28 @@
                 }
             }
 
-            // Função para limitar a exibição de palavras do array
+            // FUNÇÃO QUE LIMITA A EXIBIÇÃO DE PALAVRAS DO ARRAY
             $grupos = array_chunk($words, 80);
 
-            // Desconectar o banco
             desconecta($conexao);
         ?>
         
+        <!-- LETRA SELECIONADA -->
         <div class="word">
-            <?php
-                echo "<p> <a href='index.php'>" . htmlspecialchars($letra) . "</a> </p>" ;
-            ?>
+            <?php echo "<p> <a href='index.php'>" . htmlspecialchars($letra) . "</a> </p>" ; ?>
         </div>
+        
+        <!-- GRUPO DE PALAVRAS DA LETRA SELECIONADA -->
         <?php foreach ($grupos as $index => $grupo): ?>
             <div class="content" id="group-<?php echo $index + 1; ?>">
                 <div class="list-word">
                     <ul>
                         <?php foreach ($grupo as $word): ?>
                             <li>
-                                <p class="word-item" 
+                                <p class="word-item"
+                                    data-id = "
+                                        <?php echo htmlspecialchars($word['id']); ?>
+                                    " 
                                     data-palavra = "
                                         <?php echo htmlspecialchars($word['palavra']); ?>
                                     " 
@@ -76,6 +79,8 @@
                 </div>
             </div>
         <?php endforeach; ?>
+        
+        <!-- GRUPO DE BOTÕES GERADO AUTOMATICAMENTE -->
         <?php if(count($grupos) > 1): ?>
             <div class="group-buttons">
                 <?php foreach ($grupos as $index => $grupo): ?>
@@ -85,9 +90,10 @@
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
+
     </div>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <div id="word-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -104,13 +110,13 @@
                 <p>Detalhes adicionais aqui.</p>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-modify" href="word_alterar.php?words=<?php echo $word['id'] ?>">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5"/>
-                    <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192"/>
-                </svg>
+                <a id="link-alterar" class="btn btn-modify" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5"/>
+                        <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192"/>
+                    </svg>
                 </a>
-                <a class="btn btn-delete">
+                <a id="link-deletar" class="btn btn-delete" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                         <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                     </svg>
